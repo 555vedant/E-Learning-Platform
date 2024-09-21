@@ -1,6 +1,6 @@
 # E-Commerce Learning Platform
 
-This is an e-commerce learning platform developed using Spring Boot, Spring Data JPA, and other associated technologies. The platform allows users to register, browse courses, and make purchases for learning resources like videos, PDFs, etc.
+This is an e-commerce learning platform currently under development using Spring Boot and Spring Data JPA. The platform aims to provide users with a seamless experience for browsing and purchasing online learning resources.
 
 ## Table of Contents
 1. [Features](#features)
@@ -8,36 +8,30 @@ This is an e-commerce learning platform developed using Spring Boot, Spring Data
 3. [Architecture](#architecture)
 4. [Installation](#installation)
 5. [Running the Application](#running-the-application)
-6. [API Endpoints](#api-endpoints)
+6. [Future Enhancements](#future-enhancements)
 7. [Database Schema](#database-schema)
 8. [Configuration](#configuration)
-9. [Testing](#testing)
-10. [Contributing](#contributing)
+9. [Contributing](#contributing)
 
 ## Features
-- **User Registration and Authentication**: Users can sign up and log in to the platform.
-- **Course Catalog**: Browse various courses, including free and paid resources.
-- **Purchase Courses**: Users can purchase courses through an integrated payment gateway.
-- **Role-based Access Control**: Admins can add and manage courses, while users can only browse and purchase.
-- **Resource Management**: Courses contain different types of resources like videos, files, and assessments.
-- **Cart System**: Users can add courses to their cart and checkout.
-  
+- **Course Catalog**: Ability to manage a collection of online courses.
+- **Resource Management**: Upload and associate various types of learning resources (videos, PDFs, etc.) with courses.
+- **Future User Authentication**: Plans to implement user registration and login for a personalized experience.
+- **Admin Functionality**: Future capabilities for admins to add and manage courses and resources.
+
 ## Technologies Used
 - **Spring Boot**: For building the core application.
 - **Spring Data JPA**: For database interaction.
 - **Hibernate**: As the JPA implementation.
 - **MySQL / PostgreSQL**: For the relational database.
-- **Thymeleaf**: For server-side rendering (optional if using frontend frameworks).
 - **Lombok**: To reduce boilerplate code.
-- **JWT**: For securing API endpoints with JSON Web Tokens.
 - **Maven**: For project build and dependency management.
 
 ## Architecture
 The platform follows a layered architecture:
-- **Controller Layer**: Contains REST API controllers to handle incoming HTTP requests.
-- **Service Layer**: Implements the business logic of the application.
-- **Repository Layer**: Handles interactions with the database using Spring Data JPA.
-- **Model Layer**: Contains the entities for the database.
+- **Model Layer**: Contains entity classes for the database (e.g., `Course`, `Resource`).
+- **Repository Layer**: Interfaces for data access using Spring Data JPA.
+- **Service Layer**: Business logic (currently in development).
 
 ## Installation
 
