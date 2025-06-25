@@ -1,4 +1,4 @@
-# E-Commerce Learning Platform
+# E-Learning Platform
 
 This is an e-commerce learning platform currently under development using Spring Boot and Spring Data JPA. The platform aims to provide users with a seamless experience for browsing and purchasing online learning resources.
 
